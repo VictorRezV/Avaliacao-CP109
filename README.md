@@ -25,6 +25,6 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-### print da tela
+### Resultado final
 
 ![Capturar](https://user-images.githubusercontent.com/43206530/142745166-c850cc88-feb8-4fa2-9c4d-bfbc61a23c4c.PNG)
