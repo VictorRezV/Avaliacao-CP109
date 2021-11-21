@@ -1,11 +1,5 @@
 <template>
   <v-app>
-  <v-navigation-drawer app>
-    <v-card
-    height="400"
-    width="256"
-    class="mx-auto"
-  >
     <v-navigation-drawer app permanent>
       <v-list-item>
         <v-list-item-content>
@@ -39,8 +33,6 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-  </v-card>
-  </v-navigation-drawer>
 
   <v-system-bar
       dark
