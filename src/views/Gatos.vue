@@ -1,31 +1,19 @@
 <template>
   <div>
-    <h1>{{title}}</h1>
-    <v-row>
-      <v-col
-        v-for="(data,i) in myCards"
-        :key="i"
-        cols="12"
-        md="4"
-        xs="2"
-      >
-        <MyCard :cardInfo="data" ></MyCard>
-      </v-col>
-    </v-row>
-
+    <h1>Gatos</h1>
+    <h3>Pega imagens de gatos de uma api toda hora que atualizar essa view</h3>
+        <GatosCard :cardInfo="api" ></GatosCard>
   </div>
 </template>
 
 <script>
-  import MyCard from '../components/MyCard'
-  
+  import GatosCard from '../components/GatosCard'
 
   export default {
     name: 'Home',
     data(){
       return{
         titleview:this.$store.state.title,
-        events: null,
       }
     },
     computed:{
@@ -34,10 +22,16 @@
       },
       title(){
         return this.$store.getters.bigTitle
+      },
+      api(){
+          return this.$store.state.api
       }
     },
     components: {
-      MyCard,
+      GatosCard,
     },
+    async created(){
+        this.$store.dispatch('fetchCats')
+    }
   }
 </script>

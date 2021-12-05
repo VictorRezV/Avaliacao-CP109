@@ -14,11 +14,10 @@
 
     <v-img
       height="250"
-      v-bind:src="cardInfo.img"
+      v-bind:src="cardInfo.url"
       contain
     ></v-img>
 
-    <v-card-title>{{cardInfo.info}}</v-card-title>
 
    
   </v-card>

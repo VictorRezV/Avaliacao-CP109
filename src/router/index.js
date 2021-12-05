@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Cachorros from '../views/Cachorros.vue'
 import Passaros from '../views/Passaros.vue'
+import Gatos from '../views/Gatos.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/passaros',
     name: 'Passaros',
     component: Passaros
+  },
+  {
+    path: '/gatos',
+    name: 'Gatos',
+    component: Gatos
   }
 ]
 

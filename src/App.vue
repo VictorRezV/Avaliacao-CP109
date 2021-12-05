@@ -50,6 +50,7 @@ export default {
           {title:"About", address:"/about"},
           {title:"Cachorros", address:"/cachorros"},
           {title:"Passaros", address:"/passaros"},
+          {title:"Gatos", address:"/gatos"},
         ],
     }
   },
